@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+
+    
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Company Name</h1>
+                </div>
+
+                <div class="nav-right">
+                    <div class="search-bar">
+                        <a href="#">
+                            Search
+                        </a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Raise Funds</a></li>
+                        <li><button class="log-in">Log In</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <div class="body-wrap">
+        <section id="main-section">
+            <div class="main-wrap">
+                <div class="text-container">
+                    <div class="main-text">
+                        <h1>Empower Dreams.</h1>
+                        <h1>Change Lives.</h1>
+                        <h1>Fund Causes.</h1>
+                        <p>Join thousands making a difference through business, education, and more. <br>
+                            Get started in just a few minutes.
+                        </p>
+                    </div>
+                    <div class="main-buttons">
+                        <button>Explore campaigns</button>
+                        <button>Start a campaign</button>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="ring">
+                        <a href="#" class="outer-ring">
+                            <div class="ring-text">
+                                <p>Education</p>
+                            </div>
+                        </a>
+                        <a href="#" class="outer-ring">
+                            <div class="ring-text">
+                                <p>Emergency</p>
+                            </div>
+                        </a>
+                        <a href="#" class="outer-ring">
+                            <div class="ring-text">
+                                <p>Your Cause</p>
+                            </div>
+                        </a>
+                        <a href="#" class="outer-ring">
+                            <div class="ring-text">
+                                <p>Business</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <!-- Wave Canvas -->
+        <canvas id="waveCanvas" width="2500" height="150"></canvas>
+        </section>
+        
+
+        <section id="info-section">
+            <div class="info-warp">
+                <div class="card-wrap">
+                    <div class="info-card">
+                        <h2>Why Donate?</h2>
+                        <p>Every small gift makes a difference.<br> Support education, health, business, and more.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Help families recover</li>
+                            <li><i class="fa-solid fa-check"></i>Fund dreams & education</li>
+                            <li><i class="fa-solid fa-check"></i>Save lives with support</li>
+                        </ul>
+                        <button class="btn-donate btn">Explore campaign</button>
+                    </div>
+                    <div class="info-card">
+                        <h2>Why Start?</h2>
+                        <p>Easily create campaigns for education, emergencies, medical needs, or personal causes.</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i>Tell your story</li>
+                            <li><i class="fa-solid fa-check"></i>Share with community</li>
+                            <li><i class="fa-solid fa-check"></i> Raise funds quickly</li>
+                        </ul>
+                        <button class="btn-campaign btn">Start campaign</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories-section">
+            <h1>Explore Categories</h1>
+            <div class="categories-wrap">
+                <div class="category-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-house-fire"></i>
+                    <h3>Emergency</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Medical</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Business</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h3>Community</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <h3>Personal</h3>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
