@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 
 function drawWave() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#8B5CF6';
+    ctx.fillStyle = '#a37dfb';
     ctx.beginPath();
     ctx.moveTo(0, 100);
 
