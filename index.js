@@ -133,7 +133,6 @@
             start: "start 70%",
             end: "+=100 40%",
             scrub: true,
-            markers: true,
         },
         scale: 0.8,
         opacity: 0,
@@ -141,5 +140,6 @@
         ease: "power2.out",
         stagger: 0.2
     });
+
 
 })();
