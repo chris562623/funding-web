@@ -63,7 +63,7 @@ a{
 }
 
 .input-group input:focus {
-  border-color: #4CAF50;
+  border-color: #8B5CF6;
 }
 
 .input-group input::placeholder {
@@ -85,7 +85,7 @@ a{
 .input-group input:focus + label,
 .input-group input:not(:placeholder-shown) + label {
   transform: translateY(-1.4rem) scale(0.85);
-  color: #4CAF50;
+  color: #8B5CF6;
   font-size: 0.85rem;
 }
 
@@ -94,7 +94,7 @@ a{
   padding: 0.9rem;
   border: none;
   border-radius: 8px;
-  background: #4CAF50;
+  background: #8B5CF6;
   color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
@@ -102,7 +102,7 @@ a{
 }
 
 .btn:hover {
-  background: #43a047;
+  background: #3B82F6;
 }
 
 
@@ -114,7 +114,7 @@ a{
 }
 
 .switch a {
-  color: #4CAF50;
+  color: #3B82F6;
   text-decoration: none;
 }
 
