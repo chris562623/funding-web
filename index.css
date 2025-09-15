@@ -573,6 +573,7 @@ canvas {
     font-size: 0.9rem;
     color: #9ca3af;
 }
+
 /* Media queries*/
 
 @media (max-width: 1600px) {
@@ -868,7 +869,7 @@ canvas {
 
 @media (max-width: 600px) {
     .logo h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 
     .main-text h1 {
