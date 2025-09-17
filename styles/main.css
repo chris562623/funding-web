@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    
+
 * {
     padding: 0;
     margin: 0;
@@ -207,7 +211,6 @@ header {
     #main-section {
         height: 100vh;
     }
-
 }
 
 @media (max-width: 1417px) {
@@ -218,7 +221,6 @@ header {
 
 
 @media (max-width: 1150px) {
-
     section {
         height: auto;
         margin-top: 1.5rem;
@@ -230,11 +232,9 @@ header {
         margin: 1rem;
         padding: 10px 22px;
     }
-
 }
 
 @media (max-width: 992px) {
-
     .logo h1 {
         font-size: 1.4rem;
     }
@@ -244,12 +244,10 @@ header {
         margin: 1rem;
         height: auto;
     }
-
 }
 
 
 @media (max-width: 900px) {
-
     .logo h1 {
         font-size: 2rem;
     }
@@ -321,5 +319,4 @@ header {
     .logo h1 {
         font-size: 1.6rem;
     }
-
 }
