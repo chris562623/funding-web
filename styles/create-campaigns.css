@@ -1,0 +1,264 @@
+body {
+    background: #f3f4f6;
+}
+
+.create-campaign {
+    min-height: 100vh;
+    height: auto !important;
+    width: 100vw;
+    background: #f3f4f6;
+    padding: 2rem 2rem !important;
+}
+
+.create-campaign-container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(139, 92, 246, 0.08);
+    padding: 2.5rem 4rem;
+    width: 100%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.create-campaign-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn,
+.submit-btn {
+    background: #8B5CF6;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.back-btn:hover,
+.submit-btn:hover {
+    background: #3B82F6;
+}
+
+.create-campaign-content {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.form-left,
+.form-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-right {
+    justify-content: start;
+    align-items: center;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-family: DM Sans;
+}
+
+.form-input,
+.form-textarea {
+    background: #dee0e4;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border: 2px solid #8B5CF6;
+    background: #f3f4f6;
+}
+
+.form-textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.form-submit-btn {
+    background: #8B5CF6;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 220px;
+}
+
+.form-submit-btn:hover {
+    background: #3B82F6;
+}
+
+.upload-images {
+    background: #dee0e4;
+    border-radius: 8px;
+    height: 220px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    position: relative;
+    gap: 0.7rem;
+}
+
+.upload-plus {
+    font-size: 2.2rem;
+    color: #8B5CF6;
+    margin-bottom: 0.3rem;
+}
+
+.upload-input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.categories-select-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-family: DM Sans;
+}
+
+.categories-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.category-option {
+    background: #fff;
+    border: 2px solid #8B5CF6;
+    color: #8B5CF6;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category-option.selected {
+    background: #8B5CF6;
+    color: #fff;
+}
+
+.category-option:hover {
+    transform: scale(1.05);
+    transform: translateY(-2px);
+}
+
+.upload-progress-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.upload-progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #dee0e4;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.upload-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #8B5CF6 60%, #14B8A6 100%);
+    border-radius: 8px;
+    transition: width 0.4s;
+}
+
+.upload-progress-text {
+    font-size: 1rem;
+    color: #8B5CF6;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .create-campaign-content {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        height: auto !important;
+    }
+
+    .form-left,
+    .form-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .create-campaign-container {
+        padding: 2rem;
+    }
+
+    .upload-images {
+        width: 100%;
+        height: 180px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .create-campaign-container {
+        padding: 1rem;
+    }
+
+    .back-btn,
+    .submit-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .upload-images {
+        height: 140px;
+        font-size: 1rem;
+    }
+
+    .categories-select {
+        gap: 0.3rem;
+    }
+
+    .category-option {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
