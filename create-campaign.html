@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/create-campaigns.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Company Name</h1>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <a href="#">
+                        Search
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Raise Funds</a></li>
+                    <li><button class="log-in">Log In</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="body-wrap">
+        <section id="main-section" class="create-campaign">
+            <div class="create-campaign-container">
+                <div class="create-campaign-header">
+                    <button class="back-btn">BACK</button>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+                <div class="create-campaign-content">
+                    <div class="form-left">
+                        <label for="campaign-title" class="form-label">TITLE</label>
+                        <input type="text" id="campaign-title" class="form-input" placeholder="Enter campaign title">
+
+                        <label for="campaign-desc" class="form-label">DESCRIPTION</label>
+                        <textarea id="campaign-desc" class="form-textarea"
+                            placeholder="Describe your campaign"></textarea>
+                        <label class="categories-select-label">Categories</label>
+                        <div class="categories-select">
+                            <div class="category-option">Education</div>
+                            <div class="category-option">Health</div>
+                            <div class="category-option">Environment</div>
+                            <div class="category-option">Community</div>
+                            <div class="category-option">Emergency</div>
+                            <div class="category-option">Other</div>
+                        </div>
+                        <label for="campaign-goal" class="form-label">Goal</label>
+                        <input type="number" id="campaign-goal" class="form-input" placeholder="Enter goal amount"
+                            min="0">
+
+                        <button class="form-submit-btn">submit</button>
+                    </div>
+                    <div class="form-right">
+                        <div class="upload-images">
+                            <span class="upload-plus"><i class="fa-solid fa-plus"></i></span>
+                            <span>Upload image</span>
+                            <input type="file" class="upload-input">
+                        </div>
+                        <div class="upload-progress-container">
+                            <div class="upload-progress-bar">
+                                <div class="upload-progress-fill" id="uploadProgressFill" style="width: 60%;"></div>
+                            </div>
+                            <p class="progress-text">Uploading...<span id="progressText"> 60% </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-logo">Company Name</h2>
+                <p>Empowering dreams, funding causes, and changing lives through community support.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Explore Campaigns</a></li>
+                    <li><a href="#">Start a Campaign</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- scrips -->
+    <script src="index.js"></script>
+    <script src="./js/createCampaign.js"></script>
+</body>
+
+</html>
