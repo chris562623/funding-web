@@ -386,6 +386,21 @@ canvas {
         margin-left: 3rem;
         padding-left: 2rem;
     }
+        .main-wrap{
+        margin-bottom: 2rem;
+    }
+
+    .main-text h1 {
+        margin-bottom: 2rem;
+    }
+
+    #waveCanvas{
+        z-index: -10;
+    }
+    .main-buttons button {
+        font-size: 1.3rem;
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -656,4 +671,5 @@ canvas {
         background-color: #007bff;
         color: white;
     }
+
 }
