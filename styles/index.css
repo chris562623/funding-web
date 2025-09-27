@@ -73,8 +73,10 @@
     line-height: 2;
     font-weight: 500;
 }
-
-.main-buttons button {
+.main-buttons {
+    display: flex;
+}
+.main-buttons a {
     margin-left: 1rem;
     padding: 25px 40px;
     border-radius: 50px;
@@ -89,7 +91,7 @@
     color: white;
 }
 
-.main-buttons button:hover {
+.main-buttons a:hover {
     /* background-color: rgb(68, 211, 120); */
     background-color: #3B82F6;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.349);
@@ -97,14 +99,14 @@
     transition: all 0.3s ease-in-out;
 }
 
-.main-buttons button:last-child {
+.main-buttons a:last-child {
     /* background-color: rgb(120, 183, 255); */
     background-color: #14B8A6;
     font-weight: 400;
     border: 2px solid #28b9a8;
 }
 
-.main-buttons button:last-child:hover {
+.main-buttons a:last-child:hover {
     background-color: #36d4c2;
     border: none;
 }
@@ -397,7 +399,7 @@ canvas {
     #waveCanvas{
         z-index: -10;
     }
-    .main-buttons button {
+    .main-buttons a {
         font-size: 1.3rem;
         padding: 15px 20px;
     }
@@ -436,7 +438,7 @@ canvas {
         font-size: 1rem;
     }
 
-    .main-buttons button {
+    .main-buttons a {
         font-size: 1rem;
         padding: 12px 20px;
     }
@@ -494,7 +496,7 @@ canvas {
         justify-content: center;
     }
 
-    .main-buttons button:hover {
+    .main-buttons a:hover {
         transform: none;
     }
 
@@ -527,7 +529,7 @@ canvas {
         font-size: 0.98rem;
     }
 
-    .main-buttons button {
+    .main-buttons a {
         padding: 12px 18px;
     }
 
@@ -570,7 +572,7 @@ canvas {
         font-size: 0.9rem;
     }
 
-    .main-buttons button {
+    .main-buttons a {
         font-size: 0.9rem;
         padding: 10px 14px;
     }
@@ -606,7 +608,7 @@ canvas {
 
     }
 
-    .main-buttons button {
+    .main-buttons a {
         width: 100%;
         padding: 10px 12px;
         font-size: 0.95rem;
