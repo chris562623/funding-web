@@ -49,14 +49,19 @@
                     <button class="back-btn">BACK</button>
                     <button class="submit-btn">SUBMIT</button>
                 </div>
+                <div class="heading-text">
+                    <h1>Create Campaign</h1>
+                </div>
                 <div class="create-campaign-content">
                     <div class="form-left">
                         <label for="campaign-title" class="form-label">TITLE</label>
                         <input type="text" id="campaign-title" class="form-input" placeholder="Enter campaign title">
+                        <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i> adasdadas</span>
 
                         <label for="campaign-desc" class="form-label">DESCRIPTION</label>
                         <textarea id="campaign-desc" class="form-textarea"
                             placeholder="Describe your campaign"></textarea>
+                            <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i></span>
                         <label class="categories-select-label">Categories</label>
                         <div class="categories-select">
                             <div class="category-option">Education</div>
@@ -69,7 +74,7 @@
                         <label for="campaign-goal" class="form-label">Goal</label>
                         <input type="number" id="campaign-goal" class="form-input" placeholder="Enter goal amount"
                             min="0">
-
+                        <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i></span>
                         <button class="form-submit-btn">submit</button>
                     </div>
                     <div class="form-right">
