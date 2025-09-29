@@ -212,6 +212,28 @@ body {
     font-weight: 500;
 }
 
+.error-message {
+    display: none;
+    color: #ff0000;
+    font-size: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(253, 162, 162, 0.356);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.error-message-show{
+    display: block;
+}
+
+.heading-text{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 @media (max-width: 900px) {
     .create-campaign-content {
         flex-direction: column-reverse;
@@ -223,6 +245,7 @@ body {
     .form-right {
         width: 100%;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -234,6 +257,9 @@ body {
         width: 100%;
         height: 180px;
         font-size: 1.1rem;
+    }
+    .heading-text h1{
+        font-size: 1.7rem;
     }
 }
 
@@ -261,4 +287,9 @@ body {
         font-size: 0.8rem;
         padding: 0.3rem 0.8rem;
     }
+
+    .heading-text h1{
+        font-size: 1.5rem;
+    }
 }
+
