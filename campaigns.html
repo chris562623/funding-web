@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/campaigns.css">
     <link rel="stylesheet" href="./styles/campaign-card.css">
+    <link rel="stylesheet" href="./styles/campaign-filters.css">
 </head>
 
 <body>
@@ -45,58 +46,86 @@
     </header>
     <div class="body-wrap">
         <section id="main-section" class="campaigns">
-            <div class="campaigns-grid">
-                    <div class="campaign-card">
-                        <div class="user-wrap">
-                            <div class="campaign-user">
-                                <i class="fa-solid fa-user user-avatar"></i>
-                                <span class="user-name">John Doe</span>
-                                <i class="fa-solid fa-circle-check verified"></i>
-                            </div>
-                            <div class="campaign-options">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </div>
-                        </div>
+            <div class="campaign-filters">
+                <label for="filter">Filters:</label>
+                <select id="filter">
+                    <option>Select</option>
+                    <option value="education">Education</option>
+                    <option value="health">Health</option>
+                    <option value="environment">Environment</option>
+                </select>
 
-                        <div class="campaign-dropdown">
-                            <a href="#" class="campaign-drop-li">
-                                <i class="fa-solid fa-pencil"></i>
-                                <p>Edit</p>
-                            </a>
-                            <a href="#" class="campaign-drop-li">
-                                <i class="fa-solid fa-eye"></i>
-                                <p>View-More</p>
-                            </a>
-                            <a href="#" class="campaign-drop-li">
-                                <i class="fa-solid fa-share-nodes"></i>
-                                <p>Share</p>
-                            </a>
-                            <a href="#" class="campaign-drop-li ">
-                                <i class="fa-solid fa-trash"></i>
-                                <p>Delete</p>
-                            </a>
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option>select</option>
+                    <option value="date">Date</option>
+                    <option value="goal">Goal amount</option>
+                    <option value="raised">Raised amount</option>
+                </select>
+
+                <select id="order">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+
+                <label><input type="checkbox" id="hide-donated"> Hide donated</label>
+                <label><input type="checkbox" id="no-donations"> No donations yet</label>
+
+                <button class="submit-btn">Submit</button>
+            </div>
+
+            <div class="campaigns-grid">
+                <div class="campaign-card">
+                    <div class="user-wrap">
+                        <div class="campaign-user">
+                            <i class="fa-solid fa-user user-avatar"></i>
+                            <span class="user-name">John Doe</span>
+                            <i class="fa-solid fa-circle-check verified"></i>
                         </div>
-                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
-                            alt="Campaign Image">
-                        <div class="campaign-content">
-                            <h2 class="campaign-title">Help Build a School in Africa</h2>
-                            <p class="campaign-description">Join us in our mission to provide quality education to
-                                children
-                                in underserved communities. Your donation will help build a school and provide essential
-                                resources for learning.</p>
-                            <div class="campaign-details">
-                                <span class="campaign-goal">Goal: $50,000</span>
-                                <span class="campaign-raised">Raised: $30,000</span>
-                            </div>
-                            <div class="campaign-progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="campaign-btn">
-                                <a href="#">View More</a>
-                                <button class="donate-btn">log-in to donate</button>
-                            </div>
+                        <div class="campaign-options">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
+
+                    <div class="campaign-dropdown">
+                        <a href="#" class="campaign-drop-li">
+                            <i class="fa-solid fa-pencil"></i>
+                            <p>Edit</p>
+                        </a>
+                        <a href="#" class="campaign-drop-li">
+                            <i class="fa-solid fa-eye"></i>
+                            <p>View-More</p>
+                        </a>
+                        <a href="#" class="campaign-drop-li">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <p>Share</p>
+                        </a>
+                        <a href="#" class="campaign-drop-li ">
+                            <i class="fa-solid fa-trash"></i>
+                            <p>Delete</p>
+                        </a>
+                    </div>
+                    <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                        alt="Campaign Image">
+                    <div class="campaign-content">
+                        <h2 class="campaign-title">Help Build a School in Africa</h2>
+                        <p class="campaign-description">Join us in our mission to provide quality education to
+                            children
+                            in underserved communities. Your donation will help build a school and provide essential
+                            resources for learning.</p>
+                        <div class="campaign-details">
+                            <span class="campaign-goal">Goal: $50,000</span>
+                            <span class="campaign-raised">Raised: $30,000</span>
+                        </div>
+                        <div class="campaign-progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="campaign-btn">
+                            <a href="#">View More</a>
+                            <button class="donate-btn">log-in to donate</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="campaign-card">
                     <div class="user-wrap">
                         <div class="campaign-user">
