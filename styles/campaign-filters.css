@@ -1,0 +1,60 @@
+.campaign-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    background: #fff;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(65, 65, 65, 0.08);
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 1rem auto;
+}
+
+
+.campaign-filters label {
+    font-size: 1rem;
+}
+
+.campaign-filters select,
+.campaign-filters input[type="checkbox"],
+.campaign-filters button {
+    padding: 0.4rem 0.6rem;
+    border-radius: 10px;
+    border-color: #8b5cf6;
+    font-size: 1rem;
+}
+
+.campaign-filters button.submit-btn {
+    background: #8B5CF6;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.campaign-filters select:focus {
+    outline: none;
+    border-color: #14B8A6;
+}
+
+
+.campaign-filters button.submit-btn:hover {
+    background: #3B82F6;
+}
+
+
+/* Media queries*/
+
+@media (max-width: 600px){
+        .campaign-filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campaign-filters select,
+    .campaign-filters button {
+        width: 100%;
+    }
+}
