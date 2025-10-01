@@ -96,20 +96,21 @@
 
 .campaign-details {
     display: flex;
-    gap: 1.2rem;
-    font-size: 1rem;
-    color: #6b7280;
-    margin-bottom: 0.7rem;
+    justify-content: space-between;
+    /* gap: 1.2rem; */
+    /* font-size: 1rem; */
+    /* color: #6b7280; */
+    /* margin-bottom: 0.7rem; */
 }
 
 .campaign-goal {
     font-weight: 600;
-    color: #8B5CF6;
+    color: #14B8A6;
 }
 
 .campaign-raised {
     font-weight: 600;
-    color: #14B8A6;
+    color: #8B5CF6;
 }
 
 .donate-btn {
