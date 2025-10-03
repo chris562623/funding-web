@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/transactions.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Company Name</h1>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <a href="#">
+                        Search
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Raise Funds</a></li>
+                    <li><button class="log-in">Log In</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="body-wrap">
+        <section id="main-section" class="transactions">
+            <div class="balances">
+                <div class="balence-wrap">
+                    <div class="balance"><p>balance:</p><Span>$500</Span></div>
+                    <div class="debit"><p>Spent:</p><Span>$500</Span></div>
+                    <div class="top-up"><p>Top-up:</p><Span>$500</Span></div><!-- something else maybe? -->
+                </div>
+                <div class="transaction-wrap">
+                    <h2>Transaction History</h2>
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Title</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>Donation to Help Build a School in Africa</td>
+                                <td class="dr">-$50.00</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>Top-up via Credit Card</td>
+                                <td class="cr">+$100.00</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>Donation to Help Build a School in Africa</td>
+                                <td class="dr">-$50.00</td>
+                                <td class="cancelled">Cancelled</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>Top-up via Patpal</td>
+                                <td class="cr">+$75.00</td>
+                                <td class="pending">Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-logo">Company Name</h2>
+                <p>Empowering dreams, funding causes, and changing lives through community support.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Explore Campaigns</a></li>
+                    <li><a href="#">Start a Campaign</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- scrips -->
+    <script src="index.js"></script>
+</body>
+
+</html>
