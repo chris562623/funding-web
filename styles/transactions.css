@@ -1,0 +1,275 @@
+body {
+    background-color: #f3f4f6;
+}
+
+.transactions {
+    background: #f3f4f6;
+    min-height: 100vh;
+    padding: 4rem 3rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balances {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.balence-wrap {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.balance,
+.debit,
+.top-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(139, 92, 246, 0.08);
+    padding: 2rem;
+    min-width: 180px;
+    min-height: 180px;
+    font-size: 2rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.balance p,
+.debit p,
+.top-up p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.balance span,
+.debit span,
+.top-up span {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 700;
+}
+
+.transaction-wrap {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(139, 92, 246, 0.08);
+    padding: 2rem 1.5rem;
+    margin-top: 0;
+}
+
+.transaction-wrap h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.transaction-table th,
+.transaction-table td {
+    padding: 1rem 0.7rem;
+    text-align: left;
+}
+
+.transaction-table th {
+    background: #f3f4f6;
+    color: #8B5CF6;
+    font-weight: 700;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.transaction-table td {
+    color: #000000;
+}
+
+.transaction-table td:nth-child(3) {
+    font-weight: 600;
+}
+
+.transaction-table td:nth-child(4) {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.dr {
+    color: #F87171 !important;
+}
+
+.cr {
+    color: #22c55e !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef3fb;
+}
+
+.pending {
+    color: #f59e0b !important;
+    font-weight: 600;
+}
+
+.cancelled {
+    color: #f87171 !important;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .transactions {
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    .balances {
+        max-width: 98vw;
+    }
+
+    .balance,
+    .debit,
+    .top-up {
+        min-width: 0;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .transaction-wrap {
+        padding: 1rem 0.5rem;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .container {
+        margin: 2rem auto;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .transactions {
+        padding: 4rem 1.5rem !important;
+    }
+
+    .balance,
+    .debit,
+    .top-up {
+        padding: 0.5rem;
+        min-height: 100px;
+    }
+
+    .balance p,
+    .debit p,
+    .top-up p {
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .balance span,
+    .debit span,
+    .top-up span {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: none;
+    }
+
+    thead,
+    tbody {
+        width: max-content;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .balence-wrap {
+        gap: 1rem;
+    }
+
+    .balance,
+    .debit,
+    .top-up {
+        min-width: none;
+    }
+
+    .balance p,
+    .debit p,
+    .top-up p {
+        font-size: 0.6rem;
+        color: #555;
+        margin-bottom: 0.2rem;
+    }
+
+    .balance span,
+    .debit span,
+    .top-up span {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
