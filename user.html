@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/user.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Company Name</h1>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <a href="#">
+                        Search
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Raise Funds</a></li>
+                    <li><button class="log-in">Log In</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="body-wrap">
+        <section id="main-section" class="user-page">
+            <div class="user-details-wrap">
+                <div class="user-profile">
+                    <!-- <img src="./imgs/profile.jpeg" alt=""> -->
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h2>USER NAME</h2>
+                    <p>donated: <span>2332</span></p>
+                    <p>campaigns: <span>32423</span></p>
+                </div>
+            </div>
+            <div class="donations-slider-wrap">
+                <button class="slider-nav-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-nav-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+                <h1>Campaigns organized</h1>
+                <div class="donations-slider">
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="donated-slider-wrap">
+                <button class="slider-nav-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-nav-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+                <h1>Campaigns Donated</h1>
+                <div class="donated-slider">
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaign-card" data-url="./campaign-details.html">
+                        <div class="user-wrap">
+                            <div class="campaign-user">
+                                <i class="fa-solid fa-user user-avatar"></i>
+                                <span class="user-name">John Doe</span>
+                                <i class="fa-solid fa-circle-check verified"></i>
+                            </div>
+                            <div class="campaign-options">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="campaign-dropdown">
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-pencil"></i>
+                                <p>Edit</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-eye"></i>
+                                <p>View-More</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <p>Share</p>
+                            </a>
+                            <a href="#" class="campaign-drop-li ">
+                                <i class="fa-solid fa-trash"></i>
+                                <p>Delete</p>
+                            </a>
+                        </div>
+                        <img src="https://c.ndtvimg.com/2018-12/gkfoeq18_us-classroom-pixabay_625x300_18_December_18.jpg"
+                            alt="Campaign Image">
+                        <div class="campaign-content">
+                            <h2 class="campaign-title">Help Build a School in Africa</h2>
+                            <div class="campaign-btn">
+                                <a href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-logo">Company Name</h2>
+                <p>Empowering dreams, funding causes, and changing lives through community support.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Explore Campaigns</a></li>
+                    <li><a href="#">Start a Campaign</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- scrips -->
+    <script src="index.js"></script>
+</body>
+
+</html>
