@@ -325,7 +325,7 @@ header {
 /* profile user */
 
 .profile-wrap {
-    display: none;
+    display: flex;
     justify-content: space-between;
     width: auto;
     padding: 0 1.3rem;
@@ -348,66 +348,6 @@ header {
     cursor: pointer;
     font-size: 1.5rem;
     border: #8B5CF6 solid 2px;
-}
-
-.drop-down {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border: 1px solid rgba(97, 97, 97, 0.815);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    background-clip: padding-box;
-    padding: 20px;
-    margin: 10px;
-}
-
-.drop-down-wrap {
-    position: fixed;
-    top: 80px;
-    right: 0;
-    width: 320px;
-    max-height: 0;
-    overflow: hidden;
-    z-index: 2000;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.drop-down-wrap.active {
-    max-height: 400px;
-}
-
-.drop-down-links {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text-dark);
-    margin: 12px 0;
-}
-
-.drop-down-links p {
-    width: 100%;
-}
-
-.drop-down-links i {
-    font-size: 1.5rem;
-    padding: 8px;
-    margin-right: 15px;
-    color: var(--primary-color);
-}
-
-.drop-down-links span {
-    font-size: 1.2rem;
-
-}
-
-.drop-down-links:hover span {
-    transform: translateX(5px);
-}
-
-.drop-down-links:hover p {
-    font-weight: 600;
-
 }
 
 .profile-dropdown {
@@ -438,12 +378,7 @@ header {
 }
 
 @media (max-width: 900px) {
-    .drop-down-wrap {
-        top: 300px;
-        margin: auto;
-    }
-
-    .profile-wrap{
+    .profile-wrap {
         width: 100%;
     }
 
