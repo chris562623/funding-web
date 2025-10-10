@@ -37,8 +37,21 @@
                 <ul class="nav-links">
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Raise Funds</a></li>
-                    <li><a href="#" class="log-in">Log In</a></li>
+                    <li><button class="log-in">Log In</button></li>
+                    <div class="profile-wrap" onclick="toggleMenu()">
+                        <div class="profile">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="mobile-profile">
+                            <p>Profile</p>
+                        </div>
+                        <i class="fa-solid fa-caret-down mobile-profile"></i>
+                    </div>
                 </ul>
+                <div class="profile-dropdown nav-links" id="profile-dropdown">
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Raise Funds</a></li>
+                </div>
             </div>
         </nav>
     </header>
@@ -135,5 +148,6 @@
     <script src="index.js"></script>
     <script src="./js/createCampaign.js"></script>
 </body>
+
 
 </html>
