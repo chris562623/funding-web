@@ -178,3 +178,22 @@ document.querySelectorAll('.campaign-card').forEach(card => {
 // document.querySelectorAll('.aa').forEach(icon => {
 //     icon.classList.add('admin');
 // });
+
+// profile
+
+let menu = document.getElementById('profile-dropdown');
+
+function toggleMenu() {
+    menu.classList.toggle("profile-dropdown-active");
+    const caret = document.querySelector('.profile-wrap .fa-caret-down');
+    if (caret) {
+        caret.classList.toggle('rotated');
+    }
+}
+
+document.addEventListener('click', function (event) {
+    let icon = document.querySelector('.profile-wrap');
+    if (!menu.contains(event.target) && !icon.contains(event.target)) {
+        menu.classList.remove('profile-dropdown-active');
+    }
+});
