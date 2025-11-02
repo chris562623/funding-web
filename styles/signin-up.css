@@ -122,6 +122,19 @@ a {
     text-decoration: underline;
 }
 
+/* toggle */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #8B5CF6;
+    font-size: 1rem;
+    padding: 5px;
+    z-index: 10;
+}
+
 @media (max-width: 480px) {
     .main-card {
         padding: 1.5rem;
