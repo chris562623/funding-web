@@ -365,16 +365,33 @@ header {
 .profile-dropdown.profile-dropdown-active {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.534);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 80px;
     right: 0;
     padding: 1rem;
     border-radius: 15px;
+    gap: 2rem !important;
+}
+
+.profile-dropdown li {
+    width: 100%;
+}
+
+.profile-dropdown li a:hover {
+    color: #4f46e5;
+}
+
+.profile-dropdown li a{
+    display: block;
+    width: 100%;
+    color: #0f172a;
+    text-align: left;
+    border-bottom: 2px solid rgba(101, 104, 255, 0.411);
 }
 
 .fa-caret-down {
@@ -402,5 +419,8 @@ header {
         color: #8B5CF6;
         cursor: pointer;
         position: static;
+    }
+    .profile-dropdown li a{
+        border-bottom: none !important;
     }
 }
