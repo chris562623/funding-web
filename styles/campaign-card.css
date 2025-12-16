@@ -52,12 +52,12 @@
     display: none;
 }
 
-.campaign-user .fa-circle-check.verified {
+.campaign-user .fa-circle-check.verified-camp {
     display: block;
 }
 
 
-.verified {
+.verified-camp {
     color: #14B8A6;
     font-size: 1.1rem;
 }
@@ -235,7 +235,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .campaign-card {
         padding: 0.7rem;
     }
@@ -245,7 +245,7 @@
     }
 
     .donate-btn {
-        width: 100%;
+        width: 60%;
         text-align: center;
     }
 }

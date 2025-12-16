@@ -405,14 +405,18 @@ header {
 @media (max-width: 900px) {
     .profile-wrap {
         width: 100%;
+        display: none;
     }
 
     .mobile-profile {
         display: inline;
     }
 
-    .profile-dropdown.profile-dropdown-active {
-        display: block;
+    /* .profile-dropdown.profile-dropdown-active {
+        display: none;
+    } */
+    .profile-dropdown{
+        display: inline;
         text-align: center;
         margin-top: 10px;
         font-size: 1.2rem;
@@ -422,5 +426,7 @@ header {
     }
     .profile-dropdown li a{
         border-bottom: none !important;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }

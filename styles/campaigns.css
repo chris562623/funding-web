@@ -78,13 +78,63 @@ body {
     display: none;
 }
 
-.campaign-user .fa-circle-check.verified {
+.campaign-user .fa-user-check{
+    display: none;
+}
+
+.campaign-user .fa-circle-check.verified-camp {
     display: block;
 }
 
-.verified {
-    color: #14B8A6;
+.campaign-user .fa-user-check.verified-user {
+    display: block;
+}
+
+.verified-camp {
+    color: #14B8A6 !important;
     font-size: 1.1rem;
+}
+
+.verified-user {
+    color: #14B8A6 !important;
+    font-size: 1.1rem;
+}
+
+/* campaign badges */
+
+.badge-wrap {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.badge .badge-info-text {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  z-index: 10;
+  border: none;
+}
+
+.badge:hover .badge-info-text {
+  opacity: 1;
 }
 
 
@@ -379,7 +429,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .campaigns {
         padding: 1.2rem 0;
     }
@@ -388,6 +438,9 @@ body {
         grid-template-columns: 1fr;
         gap: 1rem;
         padding: 0;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
     }
 
     .campaign-card {
@@ -399,7 +452,7 @@ body {
     }
 
     .donate-btn {
-        width: 100%;
+        width: 60%;
         text-align: center;
     }
 
