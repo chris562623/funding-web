@@ -99,6 +99,7 @@ header {
 .nav-links li a {
     color: rgb(0, 0, 0);
     transition: border-bottom 0.1s ease-in-out;
+    display: inline-block;
 }
 
 .nav-links li a:hover {
@@ -387,8 +388,9 @@ header {
 }
 
 .profile-dropdown li a{
-    display: block;
-    width: 100%;
+    display: inline-block;
+    /* width: 100%; */
+    text-align: left;
     color: #0f172a;
     text-align: left;
     border-bottom: 2px solid rgba(101, 104, 255, 0.411);
