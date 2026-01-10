@@ -282,3 +282,51 @@ body {
         padding: 0.25rem 0.75rem;
     }
 }
+
+/* Downloadable proofs */
+#downloadable {
+    margin-top: 2rem;
+    background-color: rgb(228, 228, 228);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#title-downloadable {
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+#title-downloadable h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#title-downloadable i{
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+#title-downloadable i:hover {
+    color: #8B5CF6;
+}
+
+#downloadable ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#downloadable li {
+    margin-bottom: 0.5rem;
+}
+
+#downloadable a {
+    color: #14B8A6;
+    text-decoration: none;
+}
+
+#downloadable a:hover {
+    text-decoration: underline;
+}
