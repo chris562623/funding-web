@@ -96,12 +96,59 @@
                                 <h2>Attached files</h2>
                                 <a href="#"><i class="fa-solid fa-download"></i></a>
                             </div>
-                            
+
                             <ul>
                                 <li><a href="#">xyz.pdf</a></li>
                                 <li><a href="#">aaaaaaa.aaaa</a></li>
                                 <li><a href="#">adsfg.png</a></li>
                             </ul>
+                        </div>
+                        <div class="campaign-updates" id="campaign-updates">
+                            <div class="updates-header">
+                                <h2>Campaign updates</h2>
+                            </div>
+
+                            <form class="update-form" aria-label="post an update" method="post">
+                                <textarea id="update-text" name="update-text" placeholder="update funders...."
+                                    rows="4"></textarea>
+                                <div class="update-actions">
+                                    <label for="update-image" class="file-label">attach image</label>
+                                    <input type="file" id="update-image" name="update-image" accept="image/*">
+                                    <button type="submit" class="post-update-btn">Publish</button>
+                                </div>
+                            </form>
+
+                            <!-- <div id="no-updates">No Updates Yet</div> -->
+                            
+                            <div class="updates-list" id="updates-list" aria-live="polite">
+                                <div class="update-card">
+                                    <div class="update-meta">
+                                        <div class="update-author">posted by organizer</div>
+                                        <div class="update-date">10 nov 2027</div>
+                                    </div>
+                                    <div class="update-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Fugit saepe, incidunt facilis mollitia natus sunt,
+                                        dolores corrupti illo earum doloribus laudantium dicta rerum?
+                                        Autem repellat facere obcaecati vero cupiditate neque.
+                                    </div>
+                                    <img src="./imgs/business1.jpg" class="update-image">
+                                </div>
+
+                                <div class="update-card">
+                                    <div class="update-meta">
+                                        <div class="update-author">Posted by organizer</div>
+                                        <div class="update-date">9 nov 2027</div>
+                                    </div>
+                                    <div class="update-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Fugit saepe, incidunt facilis mollitia natus sunt,
+                                        dolores corrupti illo earum doloribus laudantium dicta rerum?
+                                        Autem repellat facere obcaecati vero cupiditate neque.
+                                    </div>
+                                    <img src="./imgs/business1.jpg" class="update-image">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="donate-wrap">
@@ -138,39 +185,79 @@
                     </button>
                 </div>
             </div>
-            <div class="faq-wrap">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary class="faq-question">what is jfdfdnfjndf?</summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ducimus
-                                quod similique dignissimos debitis quos ad
-                                repellendus quae dolor tempora? Autem facere eveniet laboriosam
-                                quaerat blanditiis officiis reprehenderit minus fugiat!</p>
+
+            <div class="comment-wrap">
+                <div class="main-comment-form">
+                    <h2>Discussions</h2>
+                    <textarea id="main-comment-text" placeholder="start a new discussion..."></textarea>
+                    <div class="input-actions" style="margin-top: 10px;">
+                        <button class="post-c-btn" onclick="postMainComment()">post Comment</button>
+                    </div>
+                </div>
+
+                <div id="comment-section">
+
+                    <!-- <div id="no-comments">No Questions Yet</div> -->
+
+                    <div class="comment-thread root-thread expanded" id="thread-1">
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <div class="profile">
+
+                                    <img src="./imgs/profile.jpeg" alt="">
+                                </div>
+                                <span class="author-name">idk adolf</span>
+                            </div>
+                            <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Fugit saepe, incidunt facilis mollitia natus sunt,
+                                dolores corrupti illo earum doloribus laudantium dicta rerum?
+                                Autem repellat facere obcaecati vero cupiditate neque.
+                            </p>
+                            <div class="comment-footer">
+                                <button class="action-btn" onclick="toggleReplyInput('thread-1')">Reply</button>
+                                <button class="action-btn toggle-replies" onclick="toggleThread('thread-1')">hide
+                                    replies (<span>1</span>)</button>
+                            </div>
+
+                            <div class="reply-input-container" id="input-thread-1">
+                                <textarea placeholder="write a reply"></textarea>
+                                <div class="input-actions">
+                                    <button class="cancel-btn" onclick="toggleReplyInput('thread-1')">cancel</button>
+                                    <button class="post-c-btn" onclick="addComment('thread-1')">send</button>
+                                </div>
+                            </div>
                         </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">what is jfdfdnfjndf?</summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ducimus
-                                quod similique dignissimos debitis quos ad
-                                repellendus quae dolor tempora? Autem facere eveniet laboriosam
-                                quaerat blanditiis officiis reprehenderit minus fugiat!</p>
+
+                        <div class="comment-thread expanded" id="thread-2">
+                            <div class="comment-card">
+                                <div class="comment-header">
+                                    <div class="profile">
+                                        <img src="./imgs/profile.jpeg" alt="">
+                                    </div>
+                                    <span class="author-name">jack R</span>
+                                </div>
+                                <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Fugit saepe, incidunt facilis mollitia natus sunt,
+                                    dolores corrupti illo earum doloribus laudantium dicta rerum?
+                                    Autem repellat facere obcaecati vero cupiditate neque.</p>
+                                <div class="comment-footer">
+                                    <button class="action-btn" onclick="toggleReplyInput('thread-2')">Reply</button>
+                                    <button class="action-btn no-replies">no Replies</button>
+                                </div>
+
+                                <div class="reply-input-container" id="input-thread-2">
+                                    <textarea placeholder="reply"></textarea>
+                                    <div class="input-actions">
+                                        <button class="cancel-btn"
+                                            onclick="toggleReplyInput('thread-2')">cancel</button>
+                                        <button class="post-c-btn" onclick="addComment('thread-2')">send</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">what is jfdfdnfjndf?</summary>
-                        <div class="faq-answer">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ducimus
-                                quod similique dignissimos debitis quos ad
-                                repellendus quae dolor tempora? Autem facere eveniet laboriosam
-                                quaerat blanditiis officiis reprehenderit minus fugiat!</p>
-                        </div>
-                    </details>
+                    </div>
                 </div>
             </div>
-
         </section>
     </div>
     <footer class="footer">
@@ -214,6 +301,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <!-- scrips -->
     <script src="index.js"></script>
+    <script src="./js/campaign-details.js"></script>
 </body>
 
 
