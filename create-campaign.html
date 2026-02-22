@@ -15,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
     </style>
 
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/create-campaigns.css">
 </head>
 
@@ -67,15 +67,21 @@
                 </div>
                 <div class="create-campaign-content">
                     <div class="form-left">
-                        <label for="campaign-title" class="form-label">TITLE</label>
+                        <label for="campaign-title" class="form-label">TITLE
+                            <span class="info-icon" data-tooltip="Enter your campaign title"><i class="fa-solid fa-circle-info"></i></span>
+                        </label>
                         <input type="text" id="campaign-title" class="form-input" placeholder="Enter campaign title">
                         <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i> adasdadas</span>
 
-                        <label for="campaign-desc" class="form-label">DESCRIPTION</label>
+                        <label for="campaign-desc" class="form-label">DESCRIPTION
+                            <span class="info-icon" data-tooltip="Enter desciption of the campaign"><i class="fa-solid fa-circle-info"></i></span>
+                        </label>
                         <textarea id="campaign-desc" class="form-textarea"
                             placeholder="Describe your campaign"></textarea>
                             <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i></span>
-                        <label class="categories-select-label">Categories</label>
+                        <label class="categories-select-label">Categories
+                            <span class="info-icon" data-tooltip="Select a category"><i class="fa-solid fa-circle-info"></i></span>
+                        </label>
                         <div class="categories-select">
                             <div class="category-option">Education</div>
                             <div class="category-option">Health</div>
@@ -84,7 +90,9 @@
                             <div class="category-option">Emergency</div>
                             <div class="category-option">Other</div>
                         </div>
-                        <label for="campaign-goal" class="form-label">Goal</label>
+                        <label for="campaign-goal" class="form-label">Goal
+                            <span class="info-icon" data-tooltip="Enter a goal amount"><i class="fa-solid fa-circle-info"></i></span>
+                        </label>
                         <input type="number" id="campaign-goal" class="form-input" placeholder="Enter goal amount"
                             min="0">
                         <span class="error-message" id="title-error"><i class="fa-solid fa-exclamation"></i></span>
@@ -93,8 +101,11 @@
                     <div class="form-right">
                         <div class="upload-images">
                             <span class="upload-plus"><i class="fa-solid fa-plus"></i></span>
-                            <span>Upload image</span>
-                            <input type="file" class="upload-input">
+                            <span>Upload documents</span>
+                            <input type="file" class="upload-input" multiple>
+                        </div>
+                        <div class="uploaded-docs-container">
+                            <div id="uploadedDocsList" class="uploaded-docs-list"></div>
                         </div>
                         <div class="upload-progress-container">
                             <div class="upload-progress-bar">

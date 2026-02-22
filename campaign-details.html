@@ -55,6 +55,14 @@
             </div>
         </nav>
     </header>
+    <div class="info-bar" id="infoBar">
+        <div class="info-bar-content">
+            <p>please top up before you can donate</p>
+            <button class="info-bar-close" onclick="closeInfoBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
     <div class="body-wrap">
         <section id="main-section" class="campaign-details">
             <div class="campaign-wrap">
@@ -119,7 +127,7 @@
                             </form>
 
                             <!-- <div id="no-updates">No Updates Yet</div> -->
-                            
+
                             <div class="updates-list" id="updates-list" aria-live="polite">
                                 <div class="update-card">
                                     <div class="update-meta">
