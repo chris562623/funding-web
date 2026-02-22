@@ -197,3 +197,9 @@ document.addEventListener('click', function (event) {
         menu.classList.remove('profile-dropdown-active');
     }
 });
+
+// clsoe info bar
+function closeInfoBar() {
+    const infoBar = document.getElementById('infoBar');
+    infoBar.classList.add('hidden');
+}
