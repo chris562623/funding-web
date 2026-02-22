@@ -70,6 +70,40 @@ body {
     margin-bottom: 0.5rem;
     color: #222;
     font-family: DM Sans;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.info-icon {
+    font-size: 1.1rem;
+    color: #8B5CF6;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-30%);
+    background: #222;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+    white-space: normal;
+    min-width: 150px;
+    max-width: 300px;
+    font-size: 1rem;
+    font-weight: 400;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .form-input,
@@ -141,6 +175,63 @@ body {
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+
+.uploaded-docs-container {
+    width: 100%;
+    max-width: 350px;
+}
+
+.uploaded-docs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.uploaded-doc-item {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid #8B5CF6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.doc-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.doc-icon {
+    color: #8B5CF6;
+    font-size: 1rem;
+}
+
+.doc-delete-btn {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.doc-delete-btn:hover {
+    color: #ff0000;
 }
 
 
@@ -293,3 +384,4 @@ body {
     }
 }
 
+/* upload docs */

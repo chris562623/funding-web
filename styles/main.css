@@ -27,6 +27,7 @@ body {
 
 .body-wrap {
     backdrop-filter: blur(10px);
+    padding-top: 60px;
 }
 
 section {
@@ -499,5 +500,81 @@ header {
 
     #profile-dropdown li a i {
         display: none;
+    }
+}
+
+/* info bar */
+
+.info-bar {
+    background-color: #c9e7fd;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    border-radius: 25px;
+}
+
+.info-bar-content {
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    max-width: 90%;
+    width: 100%;
+}
+
+.info-bar-content i {
+    color: #2196f3;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.info-bar-content p {
+    margin: 0;
+    color: #1565c0;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.info-bar-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2196f3;
+    font-size: 18px;
+    padding: 0;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+}
+
+.info-bar-close:hover {
+    color: #1565c0;
+}
+
+.info-bar.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .info-bar {
+        top: 80px;
+    }
+
+    .info-bar-content {
+        gap: 10px;
+    }
+
+    .info-bar-content p {
+        font-size: 13px;
+    }
+
+    .info-bar {
+        padding: 10px 15px;
     }
 }
